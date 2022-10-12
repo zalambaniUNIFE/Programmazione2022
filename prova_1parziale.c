@@ -1,9 +1,7 @@
 #include <stdio.h>
 
-int cubo (){
-    int n, s;
-    scanf ("%d",&n);
-    s = 0;
+int cubo (int n){
+    int s = 0;
     for (int i=1; i<=n; i++){
         for (int j=0; j<n; j++){
             s = s+n; 
@@ -13,6 +11,12 @@ int cubo (){
 }
 
 int main(){
-    printf ("Cubo: %d\n", cubo());
-    return 0;
+    int sequenza[100], M;
+    printf ("Inserisci un numero tra 1 e 100: ");
+    scanf("%d", &M);
+    for (int i=1; i<=M; i++){
+        sequenza[i] = cubo (i);
+        printf ("%d ", sequenza [i]);
+    }
+    printf ("\n");
 }
