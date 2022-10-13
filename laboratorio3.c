@@ -13,11 +13,16 @@ int isprimo(int n){
         return 0;
 }
 
-void divisori_primi(int n){
-    printf ("Divisori: ");
-    for (int i=2; i<=n/2; i++){
-        if (n%i==0 && isprimo(i))
+void fattorizzazione(int n){
+    int i=2;
+    printf ("Fattorizzazione: ");
+    while (n!=1){
+        if (n%i==0 && isprimo (i)){
             printf ("%d ", i);
+            n/=i;
+        }
+        else
+            i++;
     }
     printf ("\n");
 }
@@ -26,6 +31,6 @@ int main(){
     int n;
     printf ("Inserisci un numero: ");
     scanf ("%d", &n);
-    divisori_primi(n);
+    fattorizzazione(n);
     return 0;
 }
