@@ -1,23 +1,27 @@
 #include <stdio.h>
 
-int PI (int n){
-    int c = 0, count = 0;
-    for (int k=2; k<=n; k++){
-        c = 0;
-        for (int i=2; i<k-1; i++){
-            if (k%i == 0)
-                c++;
-        }
-        if (c == 0)
-            count++;
-    }
-    return count;
+float pot(float n, float esp){
+    float pot=1;
+    for (int i=0; i<esp; i++)
+        pot*=n;
+    return pot;
+}
+
+long long int fact(int n){
+    long long int fact=1;
+    for (int i=2; i<n+1; i++)
+        fact*=i;
+    return fact;
 }
 
 int main(){
-    int n;
-    printf ("Inserisci un numero >= 1: ");
-    scanf ("%d", &n);
-    printf ("Π(%d) = %d\n", n, PI(n));
+    float n;
+    double sin=0;
+    printf ("Calcola sin ");
+    scanf ("%f", &n);
+    for (int i=0; i<10; i++){
+        sin+= (pot(-1, i)* pot(n, 2*i+1))/fact(2*i+1)*1.0;
+    }
+    printf ("sin: %5.3lf\n", sin);
     return 0;
 }
