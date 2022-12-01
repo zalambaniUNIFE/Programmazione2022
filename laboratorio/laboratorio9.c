@@ -141,7 +141,7 @@ int main() {
       printf("Hai perso\n");
       break;
     case Vittoria:
-      printf("Hai vinto");
+      printf("Hai vinto\n");
       break;
   }
 }
