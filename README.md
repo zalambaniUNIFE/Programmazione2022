@@ -1,4 +1,4 @@
-# Programmazione
+# Programmazione in C
 anno scolastico 2022/23
 
 - [laboratorio](laboratorio): esercitazioni svolte in laboratorio.
