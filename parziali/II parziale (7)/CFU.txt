@@ -1,0 +1,8 @@
+architettura-degli-elaboratori-e-laboratorio 10
+calcolo-delle-probabilita-e-statistica 6
+lingua-inglese 6
+fisica 6
+economia-e-gestione-aziendale 6
+programmazione-e-laboratorio 12
+matematica-discreta 6
+istituzioni-di-matematica 12
